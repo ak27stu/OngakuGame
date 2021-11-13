@@ -30,12 +30,15 @@ public class Judgement : MonoBehaviour
         if(distance < 3)
         {
           gameManager.AddScore(100);
+          gameManager.Perfect(1);
         } else if(distance < 5)
         {
           gameManager.AddScore(10);
+          gameManager.Good(1);
         }else
         {
           gameManager.AddScore(0);
+          gameManager.Miss(1);
         }
         //ぶつかったものを破壊する
         Destroy(hit2D.collider.gameObject);
