@@ -8,7 +8,8 @@ public class Judgement : MonoBehaviour
   [SerializeField] float radius;
   [SerializeField] GameManager gameManager = default;
   [SerializeField] KeyCode keyCode;
-  private void Update()
+
+  void Update()
   {
     if (Input.GetKeyDown(keyCode))
     {
