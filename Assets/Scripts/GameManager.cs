@@ -54,6 +54,6 @@ public class GameManager : MonoBehaviour
     }
     public void OnRetry()
     {
-      SceneManager.LoadScene("SampleScene");
+      SceneManager.LoadScene("Scene3");
     }
 }
