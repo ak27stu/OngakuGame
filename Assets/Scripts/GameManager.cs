@@ -43,6 +43,10 @@ public class GameManager : MonoBehaviour
       scoreText.text = score.ToString();
     }
 
+    public int ReturnScore(){
+      return score;
+    }
+
     public void OnEndEvent()
     {
       Debug.Log("ゲーム終了：結果表示");
