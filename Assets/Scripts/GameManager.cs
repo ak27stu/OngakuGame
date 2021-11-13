@@ -54,12 +54,24 @@ public class GameManager : MonoBehaviour
       perfect += p;
     }
 
+    public int ReturnPerfect(){
+      return perfect;
+    }
+
     public void Good(int g){
       good += g;
     }
 
+    public int ReturnGood(){
+      return good;
+    }
+
     public void Miss(int m){
       miss += m;
+    }
+
+    public int ReturnMiss(){
+      return miss;
     }
 
     public void OnEndEvent()
@@ -69,6 +81,6 @@ public class GameManager : MonoBehaviour
     }
     public void OnRetry()
     {
-      SceneManager.LoadScene("Scene3");
+      SceneManager.LoadScene("Scene4");
     }
 }
