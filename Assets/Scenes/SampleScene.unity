@@ -684,6 +684,7 @@ MonoBehaviour:
   resultPanel: {fileID: 2106685985}
   scoreText: {fileID: 2137379870}
   playableDirector: {fileID: 2083220803}
+  score: 0
 --- !u!4 &639834778
 Transform:
   m_ObjectHideFlags: 0
@@ -698,7 +699,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &719472402
+--- !u!1 &973629299
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -706,21 +707,35 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 719472403}
+  - component: {fileID: 973629301}
+  - component: {fileID: 973629300}
   m_Layer: 0
-  m_Name: Send
+  m_Name: SendScript
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &719472403
+--- !u!114 &973629300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973629299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 317cc04c77e884139afe6cb97f6bbee4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  t: {fileID: 2137379868}
+--- !u!4 &973629301
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 719472402}
+  m_GameObject: {fileID: 973629299}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 341.82245, y: 232.08818, z: -191.92044}
   m_LocalScale: {x: 1, y: 1, z: 1}

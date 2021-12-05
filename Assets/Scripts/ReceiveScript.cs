@@ -1,15 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ReceiveScript : MonoBehaviour{
   GameObject go;
-  GameManager gm;
+  SendScript ss;
 
     // Start is called before the first frame update
     void Start(){
       //Scoreというオブジェクトを探す
       //これ　go = GameObject.Find("Score");
+
+      go = GameObject.Find("SendScript");
+      ss = go.GetComponent<SendScript>();
+
+      int score = ss.sendscript;
+      Debug.Log("スコアは" + score);
 
     }
 
@@ -21,6 +28,6 @@ public class ReceiveScript : MonoBehaviour{
       //int score = gm.score;
       //Debug.Log ("スコアは" + score);
 
-      Debug.Log(GetComponent<GameManager>().ReturnScore());
+      //これ　Debug.Log(GetComponent<GameManager>().ReturnScore());
     }
 }
