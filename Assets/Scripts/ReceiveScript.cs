@@ -29,5 +29,8 @@ public class ReceiveScript : MonoBehaviour{
       //Debug.Log ("スコアは" + score);
 
       //これ　Debug.Log(GetComponent<GameManager>().ReturnScore());
+
+      int score = ss.sendscript;
+      Debug.Log("スコアは" + score);
     }
 }
