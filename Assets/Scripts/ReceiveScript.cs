@@ -8,14 +8,14 @@ public class ReceiveScript : MonoBehaviour{
   SendScript ss;
 
     // Start is called before the first frame update
-    void Start(){
+    public void Start(){
       //Scoreというオブジェクトを探す
       //これ　go = GameObject.Find("Score");
 
       go = GameObject.Find("ScoreText");
       ss = go.GetComponent<SendScript>();
 
-      Text score = ss.sendscript;
+      Text score = ss.send;
       Debug.Log(score);
 
     }

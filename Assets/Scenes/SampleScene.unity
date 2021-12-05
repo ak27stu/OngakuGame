@@ -2131,5 +2131,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 317cc04c77e884139afe6cb97f6bbee4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  t: {fileID: 2137379868}
-  sendscript: {fileID: 2137379870}
+  send: {fileID: 2137379870}
