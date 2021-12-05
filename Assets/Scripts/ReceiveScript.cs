@@ -12,7 +12,7 @@ public class ReceiveScript : MonoBehaviour{
       //Scoreというオブジェクトを探す
       //これ　go = GameObject.Find("Score");
 
-      go = GameObject.Find("SendScript");
+      go = GameObject.Find("ScoreText");
       ss = go.GetComponent<SendScript>();
 
       Text score = ss.sendscript;
