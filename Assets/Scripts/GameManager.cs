@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
       return score;
     }
 
-    public void Perfect(int p){
+    /*public void Perfect(int p){
       perfect += p;
     }
 
@@ -73,6 +73,7 @@ public class GameManager : MonoBehaviour
     public int ReturnMiss(){
       return miss;
     }
+    */
 
     public void OnEndEvent()
     {

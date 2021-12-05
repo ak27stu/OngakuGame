@@ -22,14 +22,14 @@ public class ScoreManager : MonoBehaviour {
         // テキストの表示を入れ替える
         score_text.text = "Score:" + gm.ReturnScore();
 
-        
 
-        /*score_num += 1; // とりあえず1加算し続けてみる
+
+        score_num += 1; // とりあえず1加算し続けてみる
 
         if(score_num==100){
           return;
         }
-        */
+        
 
       }
 }
