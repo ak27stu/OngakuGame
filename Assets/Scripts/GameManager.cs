@@ -17,10 +17,10 @@ public class GameManager : MonoBehaviour
 
   [SerializeField] PlayableDirector playableDirector;
 
-  int score;
-  int perfect;
+  public int score;
+  /*int perfect;
   int good;
-  int miss;
+  int miss;*/
     void Start()
     {
       StartCoroutine(GameMain());
