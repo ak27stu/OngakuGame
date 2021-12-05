@@ -15,8 +15,8 @@ public class ReceiveScript : MonoBehaviour{
       go = GameObject.Find("SendScript");
       ss = go.GetComponent<SendScript>();
 
-      int score = ss.sendscript;
-      Debug.Log("スコアは" + score);
+      Text score = ss.sendscript;
+      Debug.Log(score);
 
     }
 
@@ -29,8 +29,5 @@ public class ReceiveScript : MonoBehaviour{
       //Debug.Log ("スコアは" + score);
 
       //これ　Debug.Log(GetComponent<GameManager>().ReturnScore());
-
-      int score = ss.sendscript;
-      Debug.Log("スコアは" + score);
     }
 }

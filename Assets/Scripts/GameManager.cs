@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
 
   [SerializeField] PlayableDirector playableDirector;
 
-  public int score;
+  public static int score;
   /*int perfect;
   int good;
   int miss;*/

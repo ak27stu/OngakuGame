@@ -4,14 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class SendScript : MonoBehaviour{
-  //public GameObject t = null;  //Textオブジェクト
-  //public Text sendscript = null;
+  public GameObject t = null;  //Textオブジェクト
+  public Text sendscript = null;
 
-  public int sendscript = 100;
+  //public int s = 100;
 
   // Start is called before the first frame update
   void Start(){
-    //sendscript = t.GetComponent<Text>();
+    sendscript = t.GetComponent<Text>();
   }
 
   // Update is called once per frame
