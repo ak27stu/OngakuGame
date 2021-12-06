@@ -12,9 +12,9 @@ public class ReceiveScript : MonoBehaviour{
 
   void Start(){
     x = GameManager.score;
-    y = Convert.ToString(x);
+    y = x.ToString();
     scoreText.text = y;
-    //Debug.Log(x);
+    //Debug.Log(y);
   }
 
   void Update(){
