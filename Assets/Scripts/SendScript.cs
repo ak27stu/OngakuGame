@@ -1,16 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SendScript : MonoBehaviour{
-  public Text send;
 
-  public void Start(){
-    send = gameObject.GetComponent<Text>();
+  protected static int Score = 0;
+
+  void Start(){
+
   }
 
   void Update(){
 
+  }
+
+  public int GetScore(){
+    return Score;
   }
 }

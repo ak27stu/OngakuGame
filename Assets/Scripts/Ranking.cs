@@ -1,10 +1,13 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Ranking : MonoBehaviour {
 
     [SerializeField,Header("数値")]
-    int point;
+    //GameObject go;
+    //SendScript ss;
 
     string[] ranking = { "1st", "2nd", "3rd", "4th", "5th" };
     int[] rankingValue = new int[5];
@@ -15,9 +18,14 @@ public class Ranking : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
+
+      //go = GameObject.Find("ScoreText");
+      //ss = go.GetComponent<SendScript>();
+      int score = 200; //= (int)(ss.send);
+
         GetRanking();
 
-        SetRanking(point);
+        SetRanking(score);
 
         for (int i = 0; i < rankingText.Length; i++)
         {

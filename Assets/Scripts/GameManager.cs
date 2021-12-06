@@ -18,9 +18,7 @@ public class GameManager : MonoBehaviour
   [SerializeField] PlayableDirector playableDirector;
 
   public static int score;
-  /*int perfect;
-  int good;
-  int miss;*/
+
     void Start()
     {
       StartCoroutine(GameMain());
@@ -46,40 +44,22 @@ public class GameManager : MonoBehaviour
       scoreText.text = score.ToString();
     }
 
-    public int ReturnScore(){
+    public int ReturnScore()
+    {
       return score;
     }
-
-    /*public void Perfect(int p){
-      perfect += p;
-    }
-
-    public int ReturnPerfect(){
-      return perfect;
-    }
-
-    public void Good(int g){
-      good += g;
-    }
-
-    public int ReturnGood(){
-      return good;
-    }
-
-    public void Miss(int m){
-      miss += m;
-    }
-
-    public int ReturnMiss(){
-      return miss;
-    }
-    */
 
     public void OnEndEvent()
     {
       Debug.Log("ゲーム終了：結果表示");
       resultPanel.SetActive(true);
     }
+
+    public int OnEndEvent2(){  //つけたし12/5
+      int a = 100;
+      return a;
+    }
+
     public void OnRetry()
     {
       SceneManager.LoadScene("Scene4");
